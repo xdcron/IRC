@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>interactive rating component</title>
+</head>
+<body>
+    <main>
+        <form action="/" class="form">
+            <div class="star">
+                <img src="img/icon-star.svg" alt="">
+            </div>
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support request.All feedback is appreciated to help us improve our offering!</p>
+            <div class="inputs">
+                  <div class="circle">
+                    <input type="radio" id="num1" name="number" value="1" class="radio-btn">
+                    <label for="num1" class="label-1">1</label>
+                  </div>
+        
+                  <div class="circle">
+                    <input type="radio" id="num2" name="number" value="2" class="radio-btn">
+                    <label for="num2" class="label-2">2</label>
+                  </div>
+                
+               <div class="circle">
+                <input type="radio" id="num3" name="number" value="3" class="radio-btn">
+                <label for="num3" class="label-3">3</label>
+               </div>
+
+                <div class="circle">
+                    <input type="radio" id="num4" name="number" value="4" class="radio-btn">
+                <label for="num4" class="label-4">4</label>
+                </div>
+            <div class="circle">
+                <input type="radio" id="num5" name="number" value="5" class="radio-btn">
+                <label for="num5" class="label-5">5</label>
+            </div>
+            </div>
+            <button type="submit" class="submit-btn">submit</button>
+        </form>
+
+       <div class="wrapper" aria-live="polite">
+        <div class="thank-you hidden">
+            <img src="img/illustration-thank-you.svg" alt="" class="thank-you-img">
+            <p class="num-chosen">You selected 4 out of 5</p>
+            <h2>Thank you!</h2>
+            <p class="summary">We appreciate you taking the time to give a rating. if you ever need support, dont hesitate to get in touch</p>
+        </div>
+       </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
